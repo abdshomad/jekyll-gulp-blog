@@ -1,0 +1,69 @@
+{
+  "name": "my-blog-yonk",
+  "version": "0.0.1",
+  "description": "it is my blog",
+  "private": true,
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "gulp"
+  ],
+  "author": "yonkyunior",
+  "license": "MIT",
+  "browser": {
+    "modernizr": "./app/_bower_components/modernizr/modernizr.js",
+    "jquery": "./app/_bower_components/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "modernizr": "Modernizr",
+    "jquery": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "browserify": "^12.0.1",
+    "browserify-shim": "^3.8.11",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-base64": "^0.1.3",
+    "gulp-cached": "^1.1.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-filter": "^3.0.1",
+    "gulp-gzip": "^1.2.0",
+    "gulp-iconfont": "^5.0.1",
+    "gulp-iconfont-css": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^6.0.1",
+    "gulp-rev-collector": "^1.0.2",
+    "gulp-rsync": "0.0.5",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-scss-lint": "^0.3.8",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "gulp-webp": "^2.3.0",
+    "gulp.spritesmith": "^6.0.0",
+    "jshint": "^2.9.1-rc1",
+    "jshint-stylish": "^2.1.0",
+    "pretty-hrtime": "^1.0.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1"
+  }
+}
