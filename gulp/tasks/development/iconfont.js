@@ -25,14 +25,13 @@ gulp.task('iconfont', function(){
     .on('glyphs', function(glyphs, options) {
       var options = {
             fontName: fontName,
+            fontPath: config.dest, // set path to font (from your CSS file if relative)
+            className: 's' // set class name in your CSS
             // normalize:true,
             // fontHeight: 1001, // fontHeight greater than 1000
             appendUnicode: true, // recommended option
             formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available
-            // fontPath: config.src, // set path to font (from your CSS file if
-              // relative)
             timestamp: runTimestamp, // recommended to get consistent builds when watching files
-            className: 's' // set class name in your CSS
       };
       gulp.src(config.style + template + '.css')
         .pipe(consolidate('lodash', options))
