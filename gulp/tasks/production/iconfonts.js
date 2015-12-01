@@ -1,5 +1,5 @@
 var gulp   = require('gulp');
-var config = require('../../config').iconfonts.production;
+var config = require('../../config').iconfont.production;
 
 /**
  * Copy fonts to folder

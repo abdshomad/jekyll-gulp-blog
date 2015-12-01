@@ -1,9 +1,9 @@
 var gulp          = require('gulp');
-var rename        = require("gulp-rename");
-var config        = require('../../config').iconfonts;
-var iconfont      = require('gulp-iconfont');
-var consolidate   = require('gulp-consolidate');
 var gulpImagemin  = require('gulp-imagemin'); // simplify the svg in case you run into troubles with transformed elements
+var iconfont      = require('gulp-iconfont');
+var config        = require('../../config').iconfont.development;
+var consolidate   = require('gulp-consolidate');
+var rename        = require("gulp-rename");
 var runTimestamp  = Math.round(Date.now()/1000);
 
 var fontName = 'loli'; // set name of your font
@@ -18,7 +18,7 @@ var template = 'fontawesome-style'; // you can also choose 'foundation-style'
 
 
 
-gulp.task('Iconfonts', function(){
+gulp.task('iconfont', function(){
   return gulp.src(config.vectors) //path to SVG
     .pipe(gulpImagemin()) // pipe image-min before you pass it to the iconfont task
     .pipe(iconfont({ fontName: fontName }))

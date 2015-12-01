@@ -4,15 +4,15 @@ var runSequence = require('run-sequence');
 /**
  * Run all tasks needed for a build in defined order
  */
-gulp.task('build', function(callback) {
+gulp.task('build', function() {
   runSequence('delete',
   [
     'jekyll',
     'sass',
     'scripts',
     'images',
-    'iconfonts'
+    'iconfont'
   ],
-  'base64',
-  callback);
+  'base64'
+  );
 });

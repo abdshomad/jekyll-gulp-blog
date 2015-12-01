@@ -85,7 +85,7 @@ module.exports = {
     src:  srcAssets + '/images/**/*',
     dest: developmentAssets + '/images'
   },
-  iconfonts: {
+  iconfont: {
     development: {
       src:     srcAssets + '/fonts/',
       dest:    developmentAssets + '/fonts',
